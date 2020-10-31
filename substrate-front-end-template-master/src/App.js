@@ -15,7 +15,7 @@ import NodeInfo from './NodeInfo';
 import TemplateModule from './TemplateModule';
 import Transfer from './Transfer';
 import Upgrade from './Upgrade';
-
+import AwesomeStruct from './AwesomeStruct';
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
   const { apiState, keyring, keyringState, apiError } = useSubstrate();
@@ -74,6 +74,7 @@ function Main () {
           </Grid.Row>
           <Grid.Row>
             <TemplateModule accountPair={accountPair} />
+            <AwesomeStruct accountPair={accountPair} />
           </Grid.Row>
         </Grid>
       </Container>
